@@ -2,6 +2,7 @@ x = int(input("Digite o valor de x: "))
 y = int(input("Digite o valor de y: "))
 z = int(input("Digite o valor de z: "))
 
+# faço a comparação para o x
 if x > y and x > z and y > z:
     print(f'x é maior número, y é o segundo maior número, z é o menor número')
 
@@ -11,6 +12,10 @@ elif x > y and x > z and z > y:
 elif x > y and x > z and z == y:
     print(f'x é o maior número, y e z são iguais')
 
+elif x < y and x < z and y == z:
+    print(f'x é o menor número, y e z são iguais')
+
+# faço a comparação para o y    
 elif y > x and y > z and x > z:
     print(f'y é o maior número, x é o segundo maior número, z é o menor número')
 
@@ -20,6 +25,10 @@ elif y > x and y > z and z > x:
 elif y > x and y > z and x == z:
     print(f'y é o maior número, x e z são iguais')
 
+elif y < x and y < z and x == z:
+    print(f'y é o menor número, x e z são iguais')
+
+# faço a comparação para o z
 elif z > x and z > y and x > y:
     print(f'z é o maior número, x é o segundo maior número, y é o menor número')
 
@@ -28,5 +37,9 @@ elif z > x and z > y and y > x:
 
 elif z > x and z > y and x == y:
     print(f'z é o maior número, x e y são iguais')
+
+elif z < x and z < y and x == y:
+    print(f'z é o menor número, x e y são iguais')
+    
 else : 
     print(f'x; y; z são iguais')
